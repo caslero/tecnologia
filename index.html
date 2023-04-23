@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/jacascript.js"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Aqui comienza la primera parte de la pagina, donde esta el degradado azul a rosado-->
+    <header
+      class="bg-gradient-to-b from-[#3727b1] via-[#8749c0] to-[#c36ad4] lg:bg-gradient-to-l lg:from-[#3727b1] lg:via-[#8749c0] lg:to-[#c36ad4] relative"
+    >
+      <!--01 Aqui comienza nuestra barra de navegacion tanto para la version movil como para pc-->
+
+      <div class="lg:container lg:mx-auto lg:pt-8">
+        <nav
+          class="pt-4 lg:flex lg:items-center lg:pt-0 relative lg:justify-between"
+        >
+          <div
+            class="px-4 sm:px-20 lg:px-0 lg:flex lg:flex-col lg:justify-between w-full xl:px-24"
+          >
+            <div>
+              <div class="flex justify-between items-center">
+                <span class="text-3xl cursor-pointer text-white font-[700]"
+                  >Relap</span
+                >
+
+                <span
+                  class="lg:basis-[35%] h-0 lg:bg-white lg:h-8 lg:w-96 lg:rounded-[3px] lg:flex lg:justify-center lg:items-center"
+                >
+                  <input
+                    class="w-0 h-0 lg:w-[98%] lg:h-[80%] lg:outline-none lg:outline-1 lg:outline-gray-100 lg:rounded"
+                    type="text"
+                    placeholder="Search"
+                  />
+                </span>
+
+                <a class="lg:text-sm lg:text-white hidden lg:flex" href="#"
+                  >Store</a
+                >
+
+                <a class="lg:text-sm lg:text-white hidden lg:flex" href="#"
+                  >About</a
+                >
+
+                <a class="lg:text-sm lg:text-white hidden lg:flex" href="#"
+                  >Contact</a
+                >
+
+                <a class="lg:text-sm lg:text-white hidden lg:flex" href="#"
+                  >Blog</a
+                >
+
+                <a class="lg:text-sm lg:text-white hidden lg:flex" href="#"
+                  >New</a
+                >
+
+                <span class="flex space-x-2">
+                  <div
+                    class="border-[1px] border-[#faede9] rounded-full w-[30px] h-[30px] flex justify-center items-center"
+                  >
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-heart"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="white"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5
+                                                            -6.566a5 5 0 1 1 7.5 6.572"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    class="border-[1px] border-[#faede9] rounded-full w-[30px] h-[30px] flex justify-center items-center"
+                  >
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-table icon-tabler-shopping-cart"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="#ffffff"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    name="menu"
+                    onclick="Open(this)"
+                    class="flex justify-end h-10 items-center left-[300px] -mt-[5px] lg:hidden"
+                  >
+                    <div
+                      class="border-[1px] border-[#faede9] rounded-full w-[30px] h-[30px] flex justify-center items-center cursor-pointer"
+                    >
+                      <a href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-align-center"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <line x1="4" y1="6" x2="20" y2="6"></line>
+                          <line x1="8" y1="12" x2="16" y2="12"></line>
+                          <line x1="6" y1="18" x2="18" y2="18"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div>
+              <div
+                class="w-full h-10 bg-white mt-4 lg:mt-0 flex items-center justify-center rounded lg:w-[0px] lg:h-0"
+              >
+                <input
+                  class="w-[98%] h-[85%] lg:h-0 outline-none outline-1 outline-gray-200 rounded lg:w-[0px] lg:outline-none"
+                  type="text"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div
+            class="absolute bg-gradient-to-bl from-[#3727b1] via-[#8749c0] to-[#c36ad4] w-0
+            h-[1000px] left-0 top-0 
+            lg:hidden overflow-hidden origin-left duration-500"
+            id="hammm"
+          >
+            <ul
+              class="flex flex-col items-center w-[83%] space-y-4 font-semibold text-white"
+            >
+              <li class="w-[85%]">
+                <div class="text-4xl text-white mt-2" name="close"  onclick="Close(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-x"
+                    width="20" height="20"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M18 6l-12 12"></path>
+                      <path d="M6 6l12 12"></path>
+                    </svg>
+                </div>
+              </li>
+              <li class="mt-10 lg:mt-0 hover:translate-y-[-5px] duration-500">
+                <a class="text-lg" href="#">Store</a>
+              </li>
+
+              <li class="hover:translate-y-[-5px] duration-500">
+                <a class="text-lg" href="#">About</a>
+              </li>
+
+              <li class="hover:translate-y-[-5px] duration-500">
+                <a class="text-lg" href="#">Contact</a>
+              </li>
+
+              <li class="hover:translate-y-[-5px] duration-500">
+                <a class="text-lg" href="#">Blog</a>
+              </li>
+
+              <li class="hover:translate-y-[-5px] duration-500">
+                <a class="text-lg" href="#">New</a>
+              </li>
+
+              <li>
+                <div class="border-[1px] border-white w-[280px]"></div>
+              </li>
+            </ul>
+
+            
+          </div>
+        </nav>
+        <!--01 Aqui termina nuestra barra de navegacion tanto para la version movil como para pc-->
+      </div>
+      <!--02 Aqui comienza la seccion de los iconos que estan x los lados del header que son para
+                el cambio de imagenes en caso de darle esa funcionn esta es la parte para moviles y pc-->
+      <div
+        class="w-full px-10 flex flex-row justify-between
+              mt-[300px] px-4 lg:px-10 lg:mt-60 md:mt-[300px]"
+        >
+        <a class="cursor-pointer" href="#">
+          <div class="w-10 h-10 rounded-full border-[1px] border-[white] flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left"
+                 width="30" height="30" viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="#ffffff"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </div>
+        </a>
+
+
+        <a  href="#">
+          <div class="w-10 h-10 rounded-full border-[1px] border-white flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="icon icon-tabler icon-tabler-chevron-right"
+                 width="30"
+                 height="30"
+                 viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="#ffffff"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!--02 Aqui termina la seccion de los iconos que estan x los lados del header que son para el
+                cambio de imagenes en caso de darle esa funcionn esta es la parte para moviles y pc-->
+
+      <!--03 Aqui comienza la seccion de donde esta la imagen principal del header, la de la laptop
+                que esta en mas de media pantalla, esta es la parte para moviles y pc-->
+      <div
+        class="container mx-auto px-4 pt-4 space-y-2 mb-10 text-white -mt-[300px] md:-mt-[300px] lg:container lg:mx-auto lg:px-0 lg:pt-4 lg:space-y-2 lg:mb-10 lg:px-0 lg:mb-0 lg:flex lg:flex-row lg:-mt-32 xl:container xl:mx-auto xl:px-28"
+      >
+        <div class="space-y-2 md:order-3 lg:w-[30%]">
+          <h5 class="text-sm text-center lg:mt-16 lg:-ml-96 lg:text-lg">
+            MINIM VENIAM
+          </h5>
+          <h2
+            class="text-2xl font-bold text-center lg:text-6xl lg:-ml-48 lg:w-96"
+          >
+            Ut Labore Et Dolore
+          </h2>
+          <div class="text-center">
+            <button
+              class="bg-yellow-500 rounded-2xl w-40 h-10 mb-4 lg:-ml-80 hover:bg-yellow-600"
+              type="submit"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div class="order-2 lg:w-[70%]">
+          <img class="lg:-ml-20 -ml-[10px]" src="img/laptop.png" alt="" />
+        </div>
+      </div>
+      <!--03 Aqui comienza la seccion de donde esta la imagen principal del header, la de la laptop
+                que esta en mas de media pantalla, esta es la parte para moviles y pc-->
+    </header>
+    <!--Aqui termina la primera parte de la pagina, donde esta el degradado azul a rosado-->
+
+    <!--Aqui comienza el cuerpo principal, es decir aqui esta la muyor parte del contenido-->
+    <main class="-mt-10">
+      <section class="bg-[#fdf2ff]">
+        <div
+          class="container mx-auto flex lg:flex-row items-center flex-col lg:justify-between lg:space-x-2 xl:container xl:mx-auto xl:px-20 lg:h-40 h-[400px] py-10 lg:py-0 lg:space-y-0 space-y-4"
+        >
+          <!--04 Comienzo del primer articulo del main, el que esta debajo del header, es decir
+                        debajo de la laptop grande, aqui esta el icono de delivery y el titulo es
+                        Quis Nostrud-->
+          <article class="flex flex-row basis-[24%] w-[70%]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-truck-delivery"
+                width="70"
+                height="50"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#a905b6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="7" cy="17" r="2" />
+                <circle cx="17" cy="17" r="2" />
+                <path
+                  d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"
+                />
+                <line x1="3" y1="9" x2="7" y2="9" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl">Quis Nostrud</h4>
+              <p class="text-xs text-gray-500">
+                Voluptate quia voluptas aspernatur aut odit fugit
+              </p>
+            </div>
+          </article>
+          <!--04 termina del primer articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de delivery y el titulo
+                        es Quis Nostrud-->
+
+          <!--05 Comienzo del segundo articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de actualizar y el titulo
+                        es Exercitation-->
+          <article class="flex flex-row basis-[24%] w-[70%]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-refresh"
+                width="70"
+                height="50"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#a905b6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl">Exercitation</h4>
+              <p class="text-xs text-gray-500">
+                Voluptate quia voluptas aspernatur aut odit fugit
+              </p>
+            </div>
+          </article>
+          <!--05 Fin del segundo articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de actualizar y el titulo
+                        es Exercitation-->
+
+          <!--06 Comienzo del tercer articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de atencion al cliente
+                        y el titulo es Ullamco Labories-->
+          <article class="flex flex-row basis-[26%] w-[70%]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-mood-boy"
+                width="70"
+                height="50"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#a905b6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M17 4.5a9 9 0 0 1 3.864 5.89a2.5 2.5 0 0 1 -.29 4.36a9 9 0 0 1
+                                        -17.137 0a2.5 2.5 0 0 1 -.29 -4.36a9 9 0 0 1 3.746 -5.81"
+                />
+                <path d="M9.5 16a3.5 3.5 0 0 0 5 0" />
+                <path d="M8.5 2c1.5 1 2.5 3.5 2.5 5" />
+                <path d="M12.5 2c1.5 2 2 3.5 2 5" />
+                <line x1="9" y1="12" x2="9.01" y2="12" />
+                <line x1="15" y1="12" x2="15.01" y2="12" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl">Ullamco Labories</h4>
+              <p class="text-xs text-gray-500">
+                Voluptate quia voluptas aspernatur aut odit fugit
+              </p>
+            </div>
+          </article>
+          <!--06 Fin del tercer articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de atencion al cliente
+                        y el titulo es Ullamco Labories-->
+
+          <!--07 Comienzo del cuarto articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de una maleta y el titulo
+                        es Nisi Ut Aliquip-->
+          <article class="flex flex-row basis-[26%] w-[70%]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-briefcase"
+                width="70"
+                height="50"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#a905b6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="12.01" />
+                <path d="M3 13a20 20 0 0 0 18 0" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl">Nisi Ut Aliquip</h4>
+              <p class="text-xs text-gray-500">
+                Voluptate quia voluptas aspernatur aut odit fugit
+              </p>
+            </div>
+          </article>
+          <!--07 Fin del cuarto articulo del main, el que esta debajo del header, es
+                        decir debajo de la laptop grande, aqui esta el icono de una maleta y el titulo
+                        es Nisi Ut Aliquip-->
+        </div>
+      </section>
+
+      <!--Comienzo de la seccion donde estan los equipos electronicos, pc tactil, telefono,
+                tablet y el monitor-->
+      <section class="bg-white lg:mt-20 mt-10">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:px-0 xl:container xl:mx-auto xl:px-28"
+        >
+          <!--08 Inicio, en esta parte esta el subtitulo, titulo y parrafo de la seccion
+                        donde estan los equipos electronicos pc tactil, telefono, tablet y el
+                        monitor-->
+          <div
+            class="flex flex-col justify-center items-center space-y-2 lg:space-y-2"
+          >
+            <h5 class="font-semibold text-xs lg:text-sm">NATUS ERROR</h5>
+            <h2 class="font-bold text-3xl lg:text-5xl">Unde Omnis Iste</h2>
+            <p class="text-xs w-60 text-gray-500 lg:w-8/12 lg:text-center">
+              Por tanto, recíbanse unos a otros como Cristo los recibió para la
+              gloria de Dios. Romanos 15:7 Por tanto, recíbanse unos a otros
+              como Cristo los recibió para la gloria de Dios. Romanos
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row lg:space-x-4 justify-between mt-16"
+          >
+            <!--26 Inicio, primer articulo donde esta la imagen del teclado y boligrafo
+                            y el titulo es (Vel Illum Qui Dolorem Eum Fugiat)-->
+            <article class="basis-1/4 space-y-6 flex flex-col items-center">
+              <img
+                class="w-auto max-w-[250px] h-40"
+                src="img/pc-tactil.jpg"
+                alt=""
+              />
+              <p class="text-xs text-gray-600 text-center w-28">
+                Por tanto, recíbanse unos a otros como Cristo los recibió para
+                la gloria de Dios. Romanos 15:7
+              </p>
+              <a class="text-xs font-semibold mx-6" href="#"> See All</a>
+
+              <p>&nbsp;</p>
+            </article>
+
+            <article class="basis-1/4 space-y-6 flex flex-col items-center">
+              <img
+                class="w-20 max-w-[250px] h-40"
+                src="img/telefono.png"
+                alt=""
+              />
+              <p class="text-xs text-gray-600 text-center w-28">
+                Por tanto, recíbanse unos a otros como Cristo los recibió para
+                la gloria de Dios. Romanos 15:7
+              </p>
+              <a class="text-xs font-semibold mx-6" href="#"> See All</a>
+
+              <p>&nbsp;</p>
+            </article>
+
+            <article class="basis-1/4 space-y-6 flex flex-col items-center">
+              <img
+                class="w-32 max-w-[200px] h-40"
+                src="img/tablet.png"
+                alt=""
+              />
+              <p class="text-xs text-gray-600 text-center w-28">
+                Por tanto, recíbanse unos a otros como Cristo los recibió para
+                la gloria de Dios. Romanos 15:7
+              </p>
+              <a class="text-xs font-semibold mx-6 text-center" href="#">
+                See All</a
+              >
+
+              <p>&nbsp;</p>
+            </article>
+
+            <article class="basis-1/4 space-y-6 flex flex-col items-center">
+              <img
+                class="w-auto max-w-[250px] h-40"
+                src="img/monitor.jpg"
+                alt=""
+              />
+              <p class="text-xs text-gray-600 text-center w-28">
+                Por tanto, recíbanse unos a otros como Cristo los recibió para
+                la gloria de Dios. Romanos 15:7
+              </p>
+              <a class="text-xs font-semibold mx-6 text-center" href="#">
+                See All</a
+              >
+
+              <p>&nbsp;</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--Fin de la seccion donde estan los equipos electronicos, pc tactil, telefono,
+                tablet y el monitor-->
+
+      <!--Inicio de la seccion que esta debajo de los equipos electronicos, aqui estan las
+                imagenes de iphones, iphone, relojes y monitores-->
+      <section class="bg-[#fdf2ff] mt-2 lg:mt-0">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28 lg:h-auto h-[1350px]"
+        >
+          <!--13 Inicio, de la parte donde esta el subtitulo y titulo de la seccion donde
+                        estan, los iphones, iphone, relojes y monitores-->
+          <div
+            class="flex flex-col justify-center items-center space-y-2 lg:space-y-0 lg:mb-0 mb-4"
+          >
+            <h5 class="font-semibold text-xs lg:text-sm lg:mb-4 mt-10">
+              DESERUNT
+            </h5>
+            <h2 class="font-bold text-3xl lg:text-5xl lg:mb-0">Mollit Anim</h2>
+          </div>
+
+          <!--13 Fin, de la parte donde esta el subtitulo y titulo de la seccion donde
+                        estan, los iphones, iphone, relojes y monitores-->
+          <div
+            class="flex lg:flex-row flex-col items-center lg:space-x-[3%] h-[422px]"
+          >
+            <!--14 Inicio, del primer articulo donde estan los iphones, aqui hay un titulo
+                            (Sed Ut Perspiciatis), un parrafo y la imagen de los iphones-->
+            <article
+              class="shadow bg-white flex flex-col-reverse mb-10 lg:w-[36%] max-w-[350px] lg:max-w-full lg:mb-0 h-full"
+            >
+              <div>
+                <img
+                  class="w-screen lg:h-[250px] lg:mt-0 mt-10 h-[250px]"
+                  src="img/iphone.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col items-center">
+                <h4 class="lg:text-2xl font-semibold text-lg mt-4 lg:mt-4">
+                  Sed Ut Perspiciatis
+                </h4>
+                <p class="mt-2 text-gray-500 lg:text-sm text-[10px] lg:mb-8">
+                  Unde omnis iste natus error
+                </p>
+                <button
+                  class="bg-white border-[1px] border-[#dad4db] w-20 h-8 lg:w-28 lg:h-8 rounded-3xl lg:mt-0 mt-4 lg:mb-6 text-[#d8abda] text-[10px] lg:font-bold hover:border-pink-300"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </article>
+            <!--14 Fin, del primer articulo donde estan los iphones, aqui hay un titulo
+                            (Sed Ut Perspiciatis), un parrafo y la imagen de los iphones-->
+
+            <!--14 Inicio, aqui deberia comenzar el siguiente articulo pero resulta que en
+                            esta segunda parte esta dividida en varios articulos en diferente orden-->
+            <div
+              class="flex container mx-auto flex-col lg:w-[61%] lg:space-y-7 space-y-72 h-full max-w-[350px] lg:max-w-full"
+            >
+              <div
+                class="lg:flex lg:flex-row lg:space-x-[5%] lg:space-y-0 space-y-10 h-[200px] max-w-[350px] lg:max-w-full"
+              >
+                <!--14-1 Inicio, del segundo articulo donde esta la imagen del iphone
+                                    y el titulo que dice (Totam Rem Aperiam)-->
+                <article
+                  class="shadow flex flex-col bg-white lg:w-[48%] h-[200px] overflow-hidden"
+                >
+                  <h4
+                    class="lg:text-2xl text-lg font-semibold mt-4 lg:w-40 ml-5"
+                  >
+                    Totam Rem Aperiam
+                  </h4>
+                  <p class="mt-2 text-sm lg:mb-2 font-semibold ml-5">$199</p>
+                  <div
+                    class="relative overflow-hidden lg:-mt-20 lg:h-[180px] lg:w-[400px] w-[450px] h-40 -mt-8"
+                  >
+                    <img
+                      class="relative lg:h-24 h-20 w-96 lg:w-screen rotate-[-30deg] lg:rotate-[-30deg] lg:mt-[80px] lg:-ml-2 ml-8 mt-16 lg:mt-10"
+                      src="img/ip.jpg"
+                      alt=""
+                    />
+                  </div>
+                </article>
+                <!--14-1 Fin, del segundo articulo donde esta la imagen del iphone y
+                                    el titulo que dice (Totam Rem Aperiam)-->
+
+                <!--14-2 Inicio, del tercer articulo donde esta la imagen de los
+                                    relojes y el titulo que dice (Eaque Ipsan)-->
+                <article
+                  class="shadow flex flex-row justify-between bg-white lg:w-[48%] lg:mt-0 h-[200px]"
+                >
+                  <div class="w-[30%]">
+                    <h4
+                      class="lg:text-2xl text-lg font-semibold mt-4 lg:w-20 ml-5"
+                    >
+                      Eaque Ipsan
+                    </h4>
+                    <p class="mt-2 text-sm lg:mb-2 font-semibold ml-5">$199</p>
+                  </div>
+                  <div class="w-[70%] flex items-end">
+                    <img
+                      class="lg:h-36 w-screen h-40"
+                      src="img/relojes.png"
+                      alt=""
+                    />
+                  </div>
+                </article>
+                <!--14-2 Fin, del tercer articulo donde esta la imagen de los
+                                    relojes y el titulo que dice (Eaque Ipsan)-->
+              </div>
+
+              <!--14-3 Inicio, del tercer articulo donde esta la imagen de los
+                                monitores y el titulo que dice (Quae Ab Illo Inventore)-->
+              <article
+                class="bg-white flex lg:flex-row-reverse flex-col-reverse lg:h-[200px] shadow lg:mt-0"
+              >
+                <div class="lg:w-[50%]">
+                  <img class="lg:h-[190px]" src="img/monitores.png" alt="" />
+                </div>
+                <div class="flex flex-col items-center lg:w-[50%]">
+                  <h4 class="lg:text-2xl text-lg font-semibold mt-8">
+                    Quae Ab Illo Inventore
+                  </h4>
+                  <p class="mt-2 text-gray-500 lg:text-sm text-[10px] mb-6">
+                    Architecto beatae vitae dicta sunt
+                  </p>
+                  <button
+                    class="bg-white border-[1px] border-[#dad4db] w-20 lg:w-28 h-8 rounded-3xl mb-6 text-[#d8abda] text-[10px] font-bold hover:border-pink-300"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </article>
+              <!--14-3 Fin, del tercer articulo donde esta la imagen de los monitores
+                                    y el titulo que dice (Quae Ab Illo Inventore)-->
+            </div>
+            <!--14 Fin, aqui deberia comenzar el siguiente articulo pero resulta que en
+                            esta segunda parte esta dividida en varios articulos en diferente orden-->
+          </div>
+        </div>
+        <div class="h-10"></div>
+      </section>
+      <!--Fin de la seccion que esta debajo de los equipos electronicos, aqui estan las imagenes
+                de iphones, iphone, relojes y monitores-->
+
+      <!--Inicio de la seccion donde hay mas equipos electronicos, audifonos y altavoces-->
+      <section class="bg-white mt-8 lg:mt-16">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col space-y-10 xl:container xl:mx-auto xl:px-28"
+        >
+          <!--15 Inicio, aqui esta el titulo de los equipos electronicos, audifonos y
+                        altavoces y tiene un titulo (Unde Omnis) y una barra con varios link-->
+          <div
+            class="flex flex-col lg:flex-row justify-between lg:items-center"
+          >
+            <h4
+              class="lg:text-5xl font-bold text-2xl w-full lg:text-start text-center lg:w-[55%] mt-8"
+            >
+              Unde Omnis
+            </h4>
+            <div
+              class="flex flex-row justify-between flex-wrap lg:space-x-10 space-x-0 lg:text-sm text-xs w-full lg:w-[45%] text-gray-600 mt-8"
+            >
+              <a class="ml-2" href="#"
+                >Phones
+                <div class="bg-[#d8abda] h-2 lg:w-auto w-12 -mt-2"></div>
+              </a>
+              <a class="" href="#">Electronics</a>
+              <a class="" href="#">Appliances</a>
+              <a href="#">Clothes</a>
+              <a href="#">Kids</a>
+            </div>
+          </div>
+          <!--15 Fin, aqui esta el titulo de los equipos electronicos, audifonos y
+                        altavoces y tiene un titulo (Unde Omnis) y una barra con varios link-->
+
+          <!--Inicio del contenido de los equipos electronicos, audifonos y altavoces-->
+          <div
+            class="flex flex-col justify-center items-center lg:flex-row lg:justify-between flex-col space-y-10 lg:space-y-0 lg:space-x-4"
+          >
+            <!--16 Inicio, aqui comienza el primer articulo de los equipos electronicos,
+                            aqui esta el audifono rojo y el titulo (Nemo Enim Ipsam)-->
+            <article
+              class="bg-white max-w-[350px] shadow container mx-auto px-4 pt-6 lg:h-96 flex flex-col items-center"
+            >
+              <img
+                class="w-auto h-40 mb-8"
+                src="img/audifonos-rojos.png"
+                alt=""
+              />
+              <h4 class="font-semibold lg:text-2xl lg:mb-2 text-center">
+                Nemo Enim Ipsam
+              </h4>
+              <div class="flex flex-row justify-between w-full mt-4">
+                <p class="font-[500] lg:text-sm mt-2">$180</p>
+                <div class="flex justify-end mb-4">
+                  <a
+                    class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-shopping-cart"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.9"
+                      stroke="#c36ad4"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="6" cy="19" r="2" />
+                      <circle cx="17" cy="19" r="2" />
+                      <path d="M17 17h-11v-14h-2" />
+                      <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!--16 Fin, aqui comienza el primer articulo de los equipos electronicos, aqui
+                            esta el audifono rojo y el titulo (Nemo Enim Ipsam)-->
+
+            <!--17 Inicio, aqui comienza el segundo articulo de los equipos electronicos,
+                            aqui esta el audifono negro y el titulo (Sed Quia Consequuntur)-->
+            <article
+              class="bg-white max-w-[350px] shadow container mx-auto px-4 pt-6 lg:h-96 flex flex-col items-center"
+            >
+              <img
+                class="w-auto h-40 mb-8"
+                src="img/audifonos-gris.png"
+                alt=""
+              />
+              <h4 class="font-semibold lg:text-2xl lg:mb-2 text-center">
+                Sed Quia Consequuntur
+              </h4>
+              <div class="flex flex-row justify-between w-full mt-4">
+                <p class="font-[500] lg:text-sm mt-2">$180</p>
+                <div class="flex justify-end mb-4">
+                  <a
+                    class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-shopping-cart"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.9"
+                      stroke="#c36ad4"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="6" cy="19" r="2" />
+                      <circle cx="17" cy="19" r="2" />
+                      <path d="M17 17h-11v-14h-2" />
+                      <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!--17 Fin, aqui comienza el segundo articulo de los equipos electronicos,
+                            aqui esta el audifono negro y el titulo (Sed Quia Consequuntur)-->
+
+            <!--18 Inicio, aqui comienza el tercer articulo de los equipos electronicos,
+                            aqui esta el altavoz verde y el titulo (Aut Odit Aut Fugit)-->
+            <article
+              class="bg-white max-w-[350px] shadow container mx-auto px-4 pt-6 lg:h-96 flex flex-col items-center"
+            >
+              <img class="w-auto h-40 mb-8" src="img/corneta-1.jpg" alt="" />
+              <h4 class="font-semibold lg:text-2xl lg:mb-2 text-center">
+                Aut Odit Aut Fugit
+              </h4>
+              <div class="flex flex-row justify-between w-full mt-4">
+                <p class="font-[500] lg:text-sm mt-2">$180</p>
+                <div class="flex justify-end mb-4">
+                  <a
+                    class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-shopping-cart"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.9"
+                      stroke="#c36ad4"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="6" cy="19" r="2" />
+                      <circle cx="17" cy="19" r="2" />
+                      <path d="M17 17h-11v-14h-2" />
+                      <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!--18 Fin, aqui comienza el tercer articulo de los equipos electronicos,
+                            aqui esta el altavoz verde y el titulo (Aut Odit Aut Fugit)-->
+
+            <!--19 Inicio, aqui comienza el cuarto articulo de los equipos electronicos,
+                            aqui esta el altavoz negro y el titulo (Quia Voluptas Aspernatur)-->
+            <article
+              class="bg-white max-w-[350px] shadow container mx-auto px-4 pt-6 lg:h-96 flex flex-col items-center"
+            >
+              <img class="w-auto h-40 mb-8" src="img/corneta-2.jpg" alt="" />
+              <h4 class="font-semibold lg:text-2xl lg:mb-2 text-center">
+                Quia Voluptas Aspernatur
+              </h4>
+              <div class="flex flex-row justify-between w-full mt-4">
+                <p class="font-[500] lg:text-sm mt-2">$180</p>
+                <div class="flex justify-end mb-4">
+                  <a
+                    class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-shopping-cart"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.9"
+                      stroke="#c36ad4"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="6" cy="19" r="2" />
+                      <circle cx="17" cy="19" r="2" />
+                      <path d="M17 17h-11v-14h-2" />
+                      <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!--19 Fin, aqui comienza el cuarto articulo de los equipos electronicos,
+                            aqui esta el altavoz negro y el titulo (Quia Voluptas Aspernatur)-->
+          </div>
+          <!--Fin del contenido de los equipos electronicos, audifonos y altavoces-->
+
+          <!--20 Inicio, esta es la seccion de los iconos que estan debajo de la seccion de
+                        los equipos electronicos que son para el cambio de articulos en caso de darle
+                        esa funcionn esta es la parte para moviles y pc-->
+          <div class="flex flex-row justify-center space-x-10">
+            <div class="flex justify-end -mt-6 mb-4">
+              <a
+                class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-left"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="#a905b6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="15 6 9 12 15 18" />
+                </svg>
+              </a>
+            </div>
+            <div class="flex justify-end -mt-6 mb-4">
+              <a
+                class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-right"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="#a905b6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!--20 Fin, esta es la seccion de los iconos que estan debajo de la seccion de los
+                        equipos electronicos que son para el cambio de articulos en caso de darle esa
+                        funcionn esta es la parte para moviles y pc-->
+        </div>
+      </section>
+      <!--Fin de la seccion donde hay mas equipos electronicos, audifonos y altavoces-->
+
+      <!--Inicio, esta seccion es para seleccionar equipos electronicos, aqui esta su descipcion
+                y hasta el precio, y comienza con una imagen de unos audifonos de color negro-->
+      <section class="bg-[#fdf2ff] mt-10 lg:mt-10">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28"
+        >
+          <!--21 Inicio, en esta parte esta el titulo y una fecha de los equipos
+                        electronicos, aqui esta su descipcion y hasta el precio, y comienza con
+                        una imagen de unos audifonos de color negro-->
+          <div class="flex flex-row justify-between mt-10 mb-10 lg:mb-0">
+            <h3 class="lg:text-5xl text-2xl font-semibold">Magni Dolores</h3>
+            <p class="lg:text-4xl text-2xl font-semibold">12:17:08:42</p>
+          </div>
+          <!--21 Fin, en esta parte esta el titulo y una fecha de los equipos
+                        electronicos, aqui esta su descipcion y hasta el precio, y comienza con
+                        una imagen de unos audifonos de color negro-->
+
+          <div
+            class="flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:space-y-0"
+          >
+            <!--22 Inicio, en este primer articulo esta una seccion del lado izquierdo
+                            donde aparecen varios link para facilitar el encuentro de los equipos
+                            electronicos-->
+            <article class="lg:bg-white lg:basis-[20%] lg:h-[390px] lg:shadow">
+              <div
+                class="lg:mt-8 flex flex-row lg:flex-col justify-center lg:ml-8"
+              >
+                <h5 class="font-semibold mr-4 lg:mr-0 lg:mb-8 lg:text-2xl">
+                  Voluptate
+                </h5>
+                <div
+                  class="flex flex-row text-xs space-x-5 lg:flex-col flex-wrap lg:text-sm lg:space-y-10 lg:space-x-0 text-gray-500"
+                >
+                  <a class="text-black ml-6 lg:ml-0" href="#"
+                    >Phones
+                    <div class="bg-[#d8abda] h-2 w-[50px] -mt-2"></div>
+                  </a>
+                  <a href="#">Electronics</a>
+                  <a href="#">Appliances</a>
+                  <a href="#">Clothes</a>
+                  <a href="#">Kids</a>
+                </div>
+              </div>
+            </article>
+            <!--22 Inicio, en este primer articulo esta una seccion del lado izquierdo
+                            donde aparecen varios link para facilitar el encuentro de los equipos
+                            electronicos-->
+
+            <!--23 Inicio, en este segundo articulo aparece el producto en tamaño grande
+                            para detallarlo con mayor facilidad-->
+            <article class="lg:basis-[40%] max-w-[350px] lg:max-w-[450px]">
+              <img
+                class="w-auto lg:h-[500px]"
+                src="img/audifonos-gris.png"
+                alt=""
+              />
+              <button
+                class="absolute bg-pink-500 w-16 h-16 rounded-full lg:-mt-[440px] -mt-[290px] lg:ml-80 ml-64 text-white font-[600]"
+              >
+                -15%
+              </button>
+            </article>
+            <!--23 Fin, en este segundo articulo aparece el producto en tamaño grande
+                            para detallarlo con mayor facilidad-->
+
+            <!--24 Inicio, en este segundo articulo aparece toda la descripcion del
+                            producto, hasta la opcion de compra-->
+            <article class="lg:basis-[35%]">
+              <div
+                class="space-y-10 lg:mx-0 mx-4 mt-8 lg:ml-8 lg:mt-10 flex flex-col items-center lg:items-start"
+              >
+                <h4
+                  class="font-semibold lg:text-2xl text-xl text-center lg:text-start"
+                >
+                  Quis Autem Vel Eum Iure Reprehenderit
+                </h4>
+                <div class="flex flex-row space-x-4 items-center">
+                  <p class="font-semibold text-md">$199</p>
+                  <p
+                    class="text-sm line-through decoration-pink-400 text-pink-400"
+                  >
+                    $299
+                  </p>
+                </div>
+                <p class="text-xs text-gray-500 text-justify">
+                  Porque tanto amó Dios al mundo que dio a su Hijo unigénito,
+                  para que todo el que cree en él no se pierda, sino que tenga
+                  vida eterna. (Juan 3:16)
+                </p>
+                <div class="w-full flex flex-row justify-between text-sm">
+                  <p>Sold: 120</p>
+                  <p>Quantity: 500</p>
+                </div>
+                <div
+                  class="w-full bg-gray-400 h-2.5 rounded-l dark:bg-gray-200 mt-[5px]"
+                >
+                  <div
+                    class="bg-[#CB86C9] h-2.5 rounded-l"
+                    style="width: 30%"
+                  ></div>
+                </div>
+                <button
+                  class="bg-[#CB86C9] w-36 h-10 rounded-full text-white text-xs font-[600] hover:bg-pink-400"
+                >
+                  Add To Cart
+                </button>
+                <p>&nbsp;</p>
+              </div>
+            </article>
+            <!--24 Fin, en este segundo articulo aparece toda la descripcion del
+                            producto, hasta la opcion de compra-->
+          </div>
+        </div>
+      </section>
+      <!--Fin, esta seccion es para seleccionar equipos electronicos, aqui esta su descipcion
+                y hasta el precio, y comienza con una imagen de unos audifonos de color negro-->
+
+      <!--Inicio, esta seccion es donde hay tres productos, un teclado, una chica con lentes de
+                realidad virtual y una laptop, las imagenes tienen un tono rosado-->
+      <section class="bg-white mt-10 lg:mt-20">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28"
+        >
+          <!--25 Inicio, subtitulo (VELIT ESSE) y titulo (Quam Nihil) de la seccion donde
+                        hay tres productos, un teclado, una chica con lentes de realidad virtual y
+                        una laptop, las imagenes tienen un tono rosado-->
+          <div class="space-y-4 mb-10 lg:mb-0">
+            <h6
+              class="lg:text-md text-xs font-semibold text-center lg:text-start"
+            >
+              VELIT ESSE
+            </h6>
+            <h2
+              class="font-semibold text-2xl lg:text-5xl text-center lg:text-start"
+            >
+              Quam Nihil
+            </h2>
+          </div>
+          <!--25 Fin, subtitulo (VELIT ESSE) y titulo (Quam Nihil) de la seccion donde
+                        hay tres productos, un teclado, una chica con lentes de realidad virtual y
+                        una laptop, las imagenes tienen un tono rosado-->
+
+          <div
+            class="flex flex-col lg:flex-row justify-between space-y-10 lg:space-y-0"
+          >
+            <!--26 Inicio, primer articulo donde esta la imagen del teclado y boligrafo
+                            y el titulo es (Vel Illum Qui Dolorem Eum Fugiat)-->
+            <article class="bg-white shadow basis-[32%] space-y-6">
+              <img class="w-screen h-60" src="img/morado-tclado.png" alt="" />
+              <h5 class="text-2xl font-semibold mx-6 text-center lg:text-start">
+                Vel Illum Qui Dolorem Eum Fugiat
+              </h5>
+              <p
+                class="lg:ml-6 ml-0 text-xs text-gray-600 text-center lg:text-start"
+              >
+                June 01/2019
+              </p>
+              <p>&nbsp;</p>
+            </article>
+            <!--26 Fin, primer articulo donde esta la imagen del teclado y boligrafo
+                            y el titulo es (Vel Illum Qui Dolorem Eum Fugiat)-->
+
+            <!--27 Inicio, segundo articulo donde esta la imagen de la chica con los
+                            lentes de realidad virtual y el titulo es (Quo Voluptas Nulla Pariatur)-->
+            <article class="bg-white shadow basis-[32%] space-y-6">
+              <img class="w-screen h-60" src="img/morado-lentes.png" alt="" />
+              <h5 class="text-2xl font-semibold mx-6 text-center lg:text-start">
+                Quo Voluptas Nulla Pariatur
+              </h5>
+              <p
+                class="lg:ml-6 ml-0 text-xs text-gray-600 mb-4 text-center lg:text-start"
+              >
+                June 01/2019
+              </p>
+              <p>&nbsp;</p>
+            </article>
+            <!--27 Fin, segundo articulo donde esta la imagen de la chica con los lentes
+                            de realidad virtual y el titulo es (Quo Voluptas Nulla Pariatur)-->
+
+            <!--28 Inicio, tercer articulo donde esta la imagen de la laptop y el titulo
+                            es (At Vero Eos Et Accussamus Et Iusto)-->
+            <article class="bg-white shadow basis-[32%] space-y-6">
+              <img class="w-screen h-60" src="img/morado-laptop.png" alt="" />
+              <h5 class="text-2xl font-semibold mx-6 text-center lg:text-start">
+                At Vero Eos Et Accussamus Et Iusto
+              </h5>
+              <p
+                class="lg:ml-6 ml-0 text-xs text-gray-600 mb-4 text-center lg:text-start"
+              >
+                June 01/2019
+              </p>
+              <p>&nbsp;</p>
+            </article>
+          </div>
+
+          <!--29 Inicio, esta es la seccion de los iconos que estan debajo de la seccion
+                        de los equipos electronicos que son para el cambio de articulos en caso de
+                        darle esa funcionn esta es la parte para moviles y pc-->
+          <div class="flex flex-row justify-center space-x-10 mt-6 lg:mt-0">
+            <div class="flex justify-end mb-4">
+              <a
+                class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-left"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="#a905b6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="15 6 9 12 15 18" />
+                </svg>
+              </a>
+            </div>
+            <div class="flex justify-end mb-4">
+              <a
+                class="border-[1px] border-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center hover:border-2 hover:border-pink-400"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-right"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="#a905b6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!--29 Fin, esta es la seccion de los iconos que estan debajo de la seccion
+                        de los equipos electronicos que son para el cambio de articulos en caso de
+                        darle esa funcionn esta es la parte para moviles y pc-->
+        </div>
+      </section>
+      <!--Fin, esta seccion es donde hay tres productos, un teclado, una chica con lentes de
+                realidad virtual y una laptop, las imagenes tienen un tono rosado-->
+
+      <!--Inicio, esta seccion es la del cuadro azul que esta casi al final de la pagina-->
+      <section class="bg-[#3F1ABE] mt-10 lg:mt-10">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28"
+        >
+          <div
+            class="flex flex-col lg:flex-row justify-between space-y-10 lg:space-y-0 items-center lg:my-20 my-10 lg:space-x-12"
+          >
+            <!--30 Inicio, esta seccion es donde esta el subtitulo (ODIO DIGNISSIMOS), el
+                            titulo (Ducimus Qui) y un parrafo muy importante-->
+            <div class="basis-[40%] space-y-3">
+              <h5
+                class="text-white text-xs text-center lg:text-sm lg:text-start"
+              >
+                ODIO DIGNISSIMOS
+              </h5>
+              <h2
+                class="text-white lg:text-5xl text-4xl text-center lg:text-start font-semibold"
+              >
+                Ducimus Qui
+              </h2>
+              <p class="text-xs text-gray-400 text-justify">
+                Porque tanto amó Dios al mundo que dio a su Hijo unigénito, para
+                que todo el que cree en él no se pierda, sino que tenga vida
+                eterna. (Juan 3:16)
+              </p>
+            </div>
+            <!--30 Fin, esta seccion es donde esta el subtitulo (ODIO DIGNISSIMOS), el
+                            titulo (Ducimus Qui) y un parrafo muy importante-->
+
+            <div
+              class="basis-[60%] flex flex-col lg:flex-row flex-wrap space-y-2 lg:space-y-0 lg:space-x-10 lg:items-start items-center"
+            >
+              <!--31 Inicio, en esta seccion esta el input de busqueda-->
+              <div
+                class="bg-white w-[300px] lg:w-[430px] h-8 rounded flex justify-center items-center"
+              >
+                <input
+                  class="w-[96%] h-[70%] outline-none rounded"
+                  type="text"
+                  placeholder="Your Email"
+                />
+              </div>
+              <!--31 Fin, en esta seccion esta el input de suscribirse-->
+
+              <!--32 Inicio, en esta seccion esta el boton de suscribirse-->
+              <button
+                class="bg-yellow-500 h-8 text-xs w-28 rounded-full text-white"
+              >
+                Suscribe
+              </button>
+              <!--32 Fin, en esta seccion esta el boton de suscribirse-->
+            </div>
+            <!--33 Inicio, esta secion es de la esfera que esta ente el cuadro azul y la
+                            seccion anterior que es blanca-->
+            <div class="absolute -mt-[120px] lg:-mt-[290px]">
+              <div
+                class="relative ml-[200px] lg:ml-[550px] lg:-mt-[200px] -mt-[115px] lg:w-[100px] lg:h-[100px] w-[80px] h-[80px] rounded-full bg-[blue] bg-gradient-to-tr from-[#DC76FF]"
+              ></div>
+            </div>
+            <!--33 Fin, esta secion es de la esfera que esta ente el cuadro azul y la
+                            seccion anterior que es blanca-->
+
+            <!--34 Inicio, esta secion es de la esfera que esta al final del cuadro azul
+                            del lado derecho que solo se le ve la mitad-->
+
+            <div class="absolute">
+              <div
+                class="absolute w-[140px] h-[60px] ml-[40px] mt-[180px] lg:w-[250px] lg:h-[130px] lg:mt-[20px] md:mt-[164px] sm:mt-[164px] overflow-hidden lg:ml-[730px]"
+              >
+                <div
+                  class="w-[140px] h-[140px] lg:w-[240px] lg:h-[240px] rounded-[50%] bg-gradient-to-bl from-blue-800 to-[#Db86FF]"
+                ></div>
+              </div>
+            </div>
+            <!--34 Fin, esta secion es de la esfera que esta al final del cuadro azul
+                            del lado derecho que solo se le ve la mitad-->
+
+            <!--35 Inicio, esta secion es de la esfera que esta al final del cuadro azul
+                            del lado izquierdo que solo se le ve una parte-->
+            <div class="absolute">
+              <div
+                class="absolute w-[60px] h-[60px] mt-[180px] -ml-[190px] md:-ml-[488px] md:mt-[164px] sm:mt-[164px] sm:-ml-[349px] lg:w-[90px] lg:h-[90px] lg:mt-[60px] lg:-ml-[165px] overflow-hidden"
+              >
+                <div
+                  class="w-[70px] h-[70px] -ml-[20px] mt-[20px] lg:w-[100px] lg:h-[100px] lg:-ml-[35px] lg:mt-[35px] rounded-[50%] bg-gradient-to-bl from-blue-800 to-[#Db86FF]"
+                ></div>
+              </div>
+            </div>
+            <!--35 Fin, esta secion es de la esfera que esta al final del cuadro azul
+                            del lado izquierdo que solo se le ve una parte-->
+          </div>
+        </div>
+      </section>
+      <!--Fin, esta seccion es la del cuadro azul que esta casi al final de la pagina-->
+
+      <section class="bg-[white] mt-10 lg:mt-10">
+        <div
+          class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28"
+        >
+          <div>
+            <div
+              class="flex flex-col lg:flex-row justify-between text-xs lg:text-lg text-gray-600 lg:space-y-0 space-y-10 lg:items-start"
+            >
+              <article
+                class="space-y-2 text-center lg:text-start flex flex-col"
+              >
+                <a class="text-black font-semibold" href="#">Tempor</a>
+                <a href="#">Similiqui</a>
+                <a href="#">Deserunt mollit anim</a>
+                <a href="#">Sed ut prspiciatis</a>
+              </article>
+              <article
+                class="space-y-2 text-center lg:text-start flex flex-col"
+              >
+                <a class="text-black font-semibold" href="#">Sunt in culpa</a>
+                <a href="#">Sunt in culpa</a>
+                <a href="#">Mollit anim</a>
+                <a href="#">Perspiciatis</a>
+              </article>
+              <article
+                class="space-y-2 text-center lg:text-start flex flex-col"
+              >
+                <a class="text-black font-semibold" href="#">Qui officia</a>
+                <a href="#">Deserunt</a>
+                <a href="#">Mollitia</a>
+                <a href="#">Laborum</a>
+              </article>
+              <article
+                class="space-y-2 text-center lg:text-start flex flex-col"
+              >
+                <a class="text-black font-semibold" href="#">Magna</a>
+                <a href="#">123 dignissimos ducimus; 42</a>
+                <a href="#">minim@info.com</a>
+                <a href="#">-1234567890</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Aqui termina el cuerpo principal, es decir aqui esta la muyor parte del contenido-->
+
+    <!--Aqui comienza el pie del cuerpo principal, es decir aqui esta la muyor parte del contenido-->
+    <footer
+      class="border-2 border-gray-200 bg-[white] mt-10 lg:mt-20 lg:h-20 h-24"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col lg:container lg:mx-auto lg:px-0 lg:flex lg:flex-col lg:space-y-10 xl:container xl:mx-auto xl:px-28"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center lg:mt-6"
+        >
+          <!--Inicio del primer articulo que es la parte de los derechos reservados-->
+          <article class="lg:order-1 order-3">
+            <p
+              class="text-[10px] text-gray-500 lg:text-[12px] lg:text-gray-500 lg:mt-0 mt-2"
+            >
+              Copyright 2019. All rights reserved
+            </p>
+          </article>
+          <!--Fin del primer articulo que es la parte de los derechos reservados-->
+
+          <!--Inicio del segundo articulo que es la parte de las redes sociales-->
+          <article class="lg:order-2 order-2 flex flex-row space-x-5">
+            <a href="#">
+              <div
+                class="border-[1px] w-[25px] h-[25px] rounded-full flex justify-center items-center lg:border-2 border-[#DC76FF] lg:w-[35px] lg:h-[35px] lg:rounded-full lg:flex lg:justify-center lg:items-center"
+              >
+                <img
+                  class="w-[15px] h-[15px] lg:w-[20px] lg:h-[20px]"
+                  src="img/facebook.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="border-[1px] w-[25px] h-[25px] rounded-full flex justify-center items-center lg:border-2 border-[#DC76FF] lg:w-[35px] lg:h-[35px] lg:rounded-full lg:flex lg:justify-center lg:items-center"
+              >
+                <img
+                  class="w-[12px] h-[12px] lg:w-[20px] lg:h-[20px]"
+                  src="img/twitter.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="border-[1px] w-[25px] h-[25px] rounded-full flex justify-center items-center lg:border-2 border-[#DC76FF] lg:w-[35px] lg:h-[35px] lg:rounded-full lg:flex lg:justify-center lg:items-center"
+              >
+                <img
+                  class="w-[15px] h-[15px] lg:w-[20px] lg:h-[20px]"
+                  src="img/youtube.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </article>
+          <!--Fin del segundo articulo que es la parte de las redes sociales-->
+
+          <!--Inicio del tercer articulo que es la parte de los metodos de pago-->
+          <article
+            class="lg:order-3 order-1 flex flex-row space-x-4 lg:mt-0 mt-2 lg:mb-0 mb-3"
+          >
+            <a href="#">
+              <div
+                class="border-[0px] w-[30px] h-[20px] flex justify-center items-center shadow-[1px_1px_3px_1px_#DC76FF] lg:w-[35px] lg:h-[25px] lg:flex lg:justify-center lg:items-center lg:shadow-[1px_1px_3px_1px_#DC76FF]"
+              >
+                <img
+                  class="w-[15px] h-[15px] lg:w-[20px] lg:h-[10px]"
+                  src="img/mercado-pago.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="border-[0px] w-[30px] h-[20px] flex justify-center items-center shadow-[1px_1px_3px_1px_#DC76FF] lg:w-[35px] lg:h-[25px] lg:flex lg:justify-center lg:items-center lg:shadow-[1px_1px_3px_1px_#DC76FF]"
+              >
+                <img
+                  class="w-[15px] h-[13px] lg:w-[20px] lg:h-[14px]"
+                  src="img/visa.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="border-[0px] w-[30px] h-[20px] flex justify-center items-center shadow-[1px_1px_3px_1px_#DC76FF] lg:w-[35px] lg:h-[25px] lg:flex lg:justify-center lg:items-center lg:shadow-[1px_1px_3px_1px_#DC76FF]"
+              >
+                <img
+                  class="w-[15px] h-[13px] lg:w-[20px] lg:h-[14px]"
+                  src="img/master-card.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </article>
+          <!--Fin del tercer articulo que es la parte de los metodos de pago-->
+        </div>
+      </div>
+    </footer>
+    <!--Aqui termina el pie del cuerpo principal, es decir aqui esta la muyor parte del contenido-->
+  </body>
+</html>
